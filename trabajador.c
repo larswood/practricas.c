@@ -25,13 +25,25 @@ int main(){
 
                 perc_ganancia = (Horas_trabajadas * 70) * 0;
                 ganancia_total = Horas_trabajadas * 70 + perc_ganancia;
-
             }
             else if(Horas_trabajadas >= 15 && Horas_trabajadas < 25){
 
                 perc_ganancia = (Horas_trabajadas * 70) * 0.10;
                 ganancia_total = Horas_trabajadas * 70 + perc_ganancia;
+            }
+            else if(Horas_trabajadas >= 25 && Horas_trabajadas < 40){
 
+                perc_ganancia = (Horas_trabajadas * 70) * 0.25;
+                ganancia_total = Horas_trabajadas * 70 + perc_ganancia;
+            }
+            else if(Horas_trabajadas >= 40 && Horas_trabajadas < 60){
+
+                perc_ganancia = (Horas_trabajadas * 70) * 0.45;
+                ganancia_total = Horas_trabajadas * 70 + perc_ganancia;
+            }
+            else{
+                perc_ganancia = (Horas_trabajadas * 70) * 0.50;
+                ganancia_total = Horas_trabajadas * 70 + perc_ganancia;
             }
 
             printf("El trabajador Nro. %d gano un total "
@@ -41,7 +53,8 @@ int main(){
 
     }
     else{
-        printf("entrada invalida \n");
+        printf("Entrada invalida \n");
+        printf("este es un mensaje nuevo \n");
     }
 
     return 0;
